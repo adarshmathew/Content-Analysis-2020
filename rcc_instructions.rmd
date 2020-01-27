@@ -1,0 +1,42 @@
+---
+title: "Painless RCC+Jupyter Instructions"
+author: "Adarsh Mathew"
+date: "1/27/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+**Step 1**: Open terminal on your computer and type:
+
+`ssh <CNetID>@midway2.rcc.uchicago.edu`
+
+You are now on the RCC cluster.
+
+**Step 1a**: (Optional) You can type in the command for extra compute now
+
+`sinteractive -p broadwl --mem=25G --time=36:00:00`
+
+**Step 2**: CD to your content analysis folder on RCC
+	
+`cd Content-Analysis-2020`
+
+**Step 3**: Load the Anaconda module
+
+`module load Anaconda3/5.3.0`
+
+**Step 4**: Use this command to find your IP address
+
+`/sbin/ip route get 8.8.8.8 | awk '{print $NF;exit}'`
+
+**Step 5**: Launch Jupyter on RCC with this command using the IP address you got in Step 4
+
+`jupyter-notebook --no-browser --ip=<ip address>`
+
+You should get a URL that you can copy and paste on your local browser. 
+
+
+Source for Step 4, 5: https://rcc.uchicago.edu/docs/software/environments/python/index.html
