@@ -1,0 +1,80 @@
+% Auriga theme
+% https://github.com/anishathalye/auriga
+
+\documentclass[12pt,aspectratio=169]{beamer}
+\usepackage{pgfpages}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{multirow}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+
+\ifnotes
+\setbeamertemplate{note page}[plain]
+\setbeameroption{show notes on second screen=right}
+\fi
+
+\usetheme{auriga}
+\usecolortheme{auriga}
+
+% define some colors for a consistent theme across slides
+\definecolor{red}{RGB}{181, 23, 0}
+\definecolor{blue}{RGB}{0, 118, 186}
+\definecolor{gray}{RGB}{146, 146, 146}
+\definecolor{turq}{RGB}{75,136,162}
+\definecolor{sred}{RGB}{187,10,33}
+\definecolor{violet}{RGB}{53,20,49}
+\definecolor{salmon}{RGB}{240,100,73}
+
+\title{The {\color{sred}Diversity}-{\color{turq}Bandwidth} Trade-off}
+
+\author{Sinan Aral \and Marshall Van Alstyne}
+
+% \author{Sinan Aral \inst{1} \and Marshall Van Alstyne \inst{2}}
+
+% \institute[shortinst]{\inst{1} New York University \samelineand \inst{2} Boston University}
+
+\begin{document}
+
+{
+  % rather than use the frame options [noframenumbering,plain], we make the
+  % color match, so that the indicated page numbers match PDF page numbers
+  \setbeamercolor{page number in head/foot}{fg=background canvas.bg}
+  \begin{frame}
+    \titlepage
+    {\color{gray}{By: Adarsh Mathew}}
+  \end{frame}
+}
+
+\input{slides/slide1}
+\input{slides/slide2-th1}
+\input{slides/slide3-lim}
+\input{slides/slide4-th2}
+\input{slides/slide5-th2}
+\input{slides/slide6}
+\input{slides/slide7}
+\input{slides/slide7}
+\input{slides/slide8-data}
+\input{slides/slide9-dv}
+\input{slides/slide10}
+\input{slides/slide11-IDN}
+\input{slides/slide12-IDN}
+\input{slides/slide13-IDNa}
+\input{slides/slide14-IDNa}
+\input{slides/slide15-ctrl}
+% \input{slides/slide16-ctrl}
+\input{slides/slide17-model}
+\input{slides/slide18-conc}
+\input{slides/slide19-questions}
+
+
+% \input{slides/bullets}
+% \input{slides/split}
+% \input{slides/figure}
+% \input{slides/centered}
+% \input{slides/monospace}
+% \input{slides/brackets}
+% \input{slides/link}
+
+\end{document}
