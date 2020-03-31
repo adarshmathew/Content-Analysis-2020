@@ -1,2 +1,10 @@
 /data
 *.pkl
+/final_paper/binned
+/final_paper/saved_objects
+/final_paper/dask-worker-space
+/final_paper/manuscript
+"/final_paper/Exported Items.bib"
+/week-7/saved_objects
+/project_data
+*.db

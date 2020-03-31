@@ -13,3 +13,6 @@ time decay gamma prior (100, 1)
 influence gamma prior (0.1, 10)
 word concentration gamma prior (10, 1)
 word pseudocount gamma prior (10, 1)
+
+
+Hello, good people! I'm Adarsh (he/him) and I'm a Master's student at the University of Chicago in the Computational Social Science program. My research interests involve investigating preference and belief formation via networks, especially in online communities like Reddit, 4/8chan, and Gab. 
